@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>co.amscraft.ultralib.UltraLib</OriginalElement>
+  <nodes>
+    <node x="5142.0" y="3018.0">co.amscraft.ultralib.editor.editors.MapEditor</node>
+    <node x="903.0" y="0.0">co.amscraft.ultralib.utils.ObjectUtils</node>
+    <node x="2769.0" y="863.5">co.amscraft.ultralib.player.PlayerUtility</node>
+    <node x="1235.0" y="5984.5">co.amscraft.ultralib.network.events.NetworkConnectedEvent</node>
+    <node x="3355.0" y="3979.0">co.amscraft.ultralib.network.NetworkCommand</node>
+    <node x="2816.0" y="0.0">co.amscraft.ultralib.player.PlayerData</node>
+    <node x="3394.0" y="598.0">co.amscraft.ultralib.editor.Editor</node>
+    <node x="0.0" y="0.0">co.amscraft.ultralib.network.NetworkConnection</node>
+    <node x="1242.0" y="8510.0">co.amscraft.ultralib.tic.ServerTic</node>
+    <node x="6478.25" y="4034.0">co.amscraft.ultralib.editor.editors.ObjectEditor.NewObject</node>
+    <node x="681.9999999999998" y="4009.0">co.amscraft.ultralib.modules.ModuleCommand</node>
+    <node x="1729.4999999999998" y="2599.0">co.amscraft.ultralib.commands.Component</node>
+    <node x="3361.5" y="5694.0">co.amscraft.ultralib.events.utility.UltraEvent</node>
+    <node x="881.0" y="7447.0">co.amscraft.ultralib.utils.serialize.NormalObjectSerializer</node>
+    <node x="4084.0" y="5896.0">co.amscraft.ultralib.events.EditorRunResponseEvent</node>
+    <node x="1945.0" y="7860.0">co.amscraft.ultralib.editor.EditorCheck</node>
+    <node x="0.0" y="8510.0">co.amscraft.ultralib.commands.UltraBukkitCommand</node>
+    <node x="6001.0" y="3614.0">co.amscraft.ultralib.editor.editors.NewObjectEditor.NewObject</node>
+    <node x="3366.0" y="7476.5">co.amscraft.ultralib.utils.serialize.CollectionsSeralizer</node>
+    <node x="1762.0" y="7476.5">co.amscraft.ultralib.utils.serialize.ParsableSerializer</node>
+    <node x="6613.0" y="6910.0">co.amscraft.ultralib.network.PacketCommand</node>
+    <node x="5108.0" y="6910.0">co.amscraft.ultralib.utils.ObjectSerializer</node>
+    <node x="1088.0" y="7860.0">co.amscraft.ultralib.editor.DisplayValue</node>
+    <node x="5522.0" y="2599.0">co.amscraft.ultralib.editor.editors.AbstractEditor</node>
+    <node x="2521.0" y="3979.0">co.amscraft.ultralib.commands.BaseUltraCommand</node>
+    <node x="7077.0" y="7860.0">co.amscraft.ultralib.utils.BinaryHexConverter</node>
+    <node x="4933.0" y="5984.5">co.amscraft.ultralib.events.UltraObjectCreationEvent</node>
+    <node x="3075.0" y="5955.0">co.amscraft.ultralib.network.events.NetworkPacketReceivedEvent</node>
+    <node x="2513.0" y="7476.5">co.amscraft.ultralib.utils.serialize.MapSerializer</node>
+    <node x="4382.0" y="0.0">co.amscraft.ultralib.modules.Module</node>
+    <node x="2757.0" y="7860.0">co.amscraft.ultralib.tic.GameTic</node>
+    <node x="4044.0" y="4038.5">co.amscraft.ultralib.commands.UltraSettings</node>
+    <node x="1838.9999999999998" y="4008.5">co.amscraft.ultralib.editor.SettingsCommand</node>
+    <node x="0.0" y="7476.5">co.amscraft.ultralib.utils.serialize.ArraySeralizer</node>
+    <node x="2020.0" y="5925.5">co.amscraft.ultralib.events.PlayerDataCreationEvent</node>
+    <node x="5098.25" y="4034.0">co.amscraft.ultralib.editor.editors.CollectionEditor.NewCollectionItem</node>
+    <node x="5295.0" y="7860.0">co.amscraft.ultralib.network.Packet</node>
+    <node x="0.0" y="7860.0">co.amscraft.ultralib.network.NetworkListener</node>
+    <node x="1156.9999999999998" y="4008.5">co.amscraft.ultralib.modules.ModulesCommand</node>
+    <node x="5608.0" y="6044.0">co.amscraft.ultralib.events.ServerTickEvent</node>
+    <node x="3427.0" y="7860.0">co.amscraft.ultralib.network.FilePacket</node>
+    <node x="6137.0" y="5925.5">co.amscraft.ultralib.network.events.PacketCommandEvent</node>
+    <node x="126.0" y="6104.0">co.amscraft.ultralib.events.utility.CancelableEvent</node>
+    <node x="6137.0" y="7860.0">co.amscraft.ultralib.UltraListener</node>
+    <node x="4591.0" y="7860.0">co.amscraft.ultralib.UltraLib</node>
+    <node x="4382.0" y="3106.5">co.amscraft.ultralib.editor.editors.CollectionEditor</node>
+    <node x="862.0" y="8510.0">co.amscraft.ultralib.player.PlayerReference</node>
+    <node x="0.0" y="6494.0">co.amscraft.ultralib.network.events.NetworkConnectionEvent</node>
+    <node x="6014.0" y="6910.0">co.amscraft.ultralib.network.PacketData</node>
+    <node x="1621.0" y="8510.0">co.amscraft.ultralib.network.exceptions.PacketTimedOutException</node>
+    <node x="6711.5" y="7449.0">co.amscraft.ultralib.network.PacketCommand.Command</node>
+    <node x="6662.0" y="3047.5">co.amscraft.ultralib.editor.editors.ObjectEditor</node>
+    <node x="1753.9999999999998" y="3313.0">co.amscraft.ultralib.commands.UltraCommand</node>
+    <node x="5744.0" y="7860.0">co.amscraft.ultralib.editor.FieldDescription</node>
+    <node x="1199.0" y="4334.0">co.amscraft.ultralib.player.UltraPlayer</node>
+    <node x="0.0" y="4334.0">co.amscraft.ultralib.UltraObject</node>
+    <node x="490.0" y="5955.0">co.amscraft.ultralib.events.EntityDeathByEntityEvent</node>
+    <node x="1733.0" y="6910.0">co.amscraft.ultralib.utils.serialize.AbstractSerializer</node>
+    <node x="5902.0" y="3106.5">co.amscraft.ultralib.editor.editors.NewObjectEditor</node>
+    <node x="2012.0" y="923.0">co.amscraft.ultralib.editor.EditorSettings</node>
+    <node x="3856.0" y="7860.0">co.amscraft.ultralib.utils.NMSUtils</node>
+    <node x="0.0" y="3979.0">co.amscraft.ultralib.editor.EditorCommand</node>
+    <node x="4317.0" y="6910.0">co.amscraft.ultralib.editor.EditorData</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="co.amscraft.ultralib.editor.editors.CollectionEditor.NewCollectionItem" target="co.amscraft.ultralib.editor.editors.NewObjectEditor.NewObject">
+      <point x="173.0" y="-126.0" />
+      <point x="5617.25" y="4009.0" />
+      <point x="6136.5" y="4009.0" />
+      <point x="-135.5" y="185.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.CollectionEditor" target="co.amscraft.ultralib.editor.editors.AbstractEditor">
+      <point x="0.0" y="-184.5" />
+      <point x="4752.0" y="2988.0" />
+      <point x="5614.5" y="2988.0" />
+      <point x="-277.5" y="184.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.network.events.NetworkConnectionEvent" target="co.amscraft.ultralib.events.utility.CancelableEvent">
+      <point x="0.0" y="-185.5" />
+      <point x="0.0" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.utils.serialize.NormalObjectSerializer" target="co.amscraft.ultralib.utils.serialize.AbstractSerializer">
+      <point x="0.0" y="-184.0" />
+      <point x="1311.5" y="7427.0" />
+      <point x="1969.6999999999998" y="7427.0" />
+      <point x="-157.80000000000018" y="243.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.events.EditorRunResponseEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-274.0" />
+      <point x="4498.5" y="5876.0" />
+      <point x="3615.722222222222" y="5876.0" />
+      <point x="46.22222222222217" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.network.events.NetworkPacketReceivedEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-215.0" />
+      <point x="0.0" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.utils.serialize.CollectionsSeralizer" target="co.amscraft.ultralib.utils.serialize.AbstractSerializer">
+      <point x="0.0" y="-154.5" />
+      <point x="3819.0" y="7417.0" />
+      <point x="2443.1" y="7417.0" />
+      <point x="315.5999999999999" y="243.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.network.events.PacketCommandEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-244.5" />
+      <point x="6705.5" y="5846.0" />
+      <point x="3754.3888888888887" y="5846.0" />
+      <point x="184.8888888888887" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.events.utility.CancelableEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-66.0" />
+      <point x="298.0" y="5846.0" />
+      <point x="3384.6111111111113" y="5846.0" />
+      <point x="-184.8888888888887" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.EditorCommand" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-155.0" />
+      <point x="331.0" y="3939.0" />
+      <point x="1813.4285714285713" y="3939.0" />
+      <point x="-356.57142857142844" y="303.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.SettingsCommand" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-125.5" />
+      <point x="0.0" y="303.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.utils.serialize.ParsableSerializer" target="co.amscraft.ultralib.utils.serialize.AbstractSerializer">
+      <point x="0.0" y="-154.5" />
+      <point x="0.0" y="243.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.MapEditor" target="co.amscraft.ultralib.editor.editors.AbstractEditor">
+      <point x="0.0" y="-273.0" />
+      <point x="5512.0" y="2998.0" />
+      <point x="5799.5" y="2998.0" />
+      <point x="-92.5" y="184.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.events.PlayerDataCreationEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-244.5" />
+      <point x="2537.5" y="5876.0" />
+      <point x="3523.277777777778" y="5876.0" />
+      <point x="-46.22222222222217" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.utils.serialize.MapSerializer" target="co.amscraft.ultralib.utils.serialize.AbstractSerializer">
+      <point x="0.0" y="-154.5" />
+      <point x="2929.5" y="7427.0" />
+      <point x="2285.3" y="7427.0" />
+      <point x="157.80000000000018" y="243.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.commands.BaseUltraCommand" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-155.0" />
+      <point x="2928.0" y="3959.0" />
+      <point x="2288.857142857142" y="3959.0" />
+      <point x="118.85714285714266" y="303.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.player.PlayerUtility" target="co.amscraft.ultralib.player.PlayerData">
+      <point x="0.0" y="-362.0" />
+      <point x="0.0" y="274.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.modules.ModuleCommand" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-125.0" />
+      <point x="909.4999999999998" y="3949.0" />
+      <point x="1932.285714285714" y="3949.0" />
+      <point x="-237.71428571428578" y="303.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.network.events.NetworkConnectedEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-185.5" />
+      <point x="1617.5" y="5866.0" />
+      <point x="3477.0555555555557" y="5866.0" />
+      <point x="-92.44444444444434" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.EditorSettings" target="co.amscraft.ultralib.player.PlayerData">
+      <point x="0.0" y="-302.5" />
+      <point x="2380.5" y="573.0" />
+      <point x="2901.1666666666665" y="573.0" />
+      <point x="-170.33333333333348" y="274.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.events.UltraObjectCreationEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-185.5" />
+      <point x="5260.5" y="5866.0" />
+      <point x="3661.9444444444443" y="5866.0" />
+      <point x="92.44444444444434" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.NewObjectEditor.NewObject" target="co.amscraft.ultralib.editor.editors.NewObjectEditor">
+      <point x="0.0" y="-185.0" />
+      <point x="0.0" y="184.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.utils.serialize.ArraySeralizer" target="co.amscraft.ultralib.utils.serialize.AbstractSerializer">
+      <point x="0.0" y="-154.5" />
+      <point x="430.5" y="7417.0" />
+      <point x="1811.9" y="7417.0" />
+      <point x="-315.5999999999999" y="243.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.CollectionEditor.NewCollectionItem" target="co.amscraft.ultralib.editor.editors.CollectionEditor">
+      <point x="-173.0" y="-126.0" />
+      <point x="5271.25" y="4009.0" />
+      <point x="4752.0" y="4009.0" />
+      <point x="0.0" y="184.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.NewObjectEditor" target="co.amscraft.ultralib.editor.editors.AbstractEditor">
+      <point x="0.0" y="-184.5" />
+      <point x="6272.0" y="2998.0" />
+      <point x="5984.5" y="2998.0" />
+      <point x="92.5" y="184.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.commands.UltraSettings" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-95.5" />
+      <point x="4190.5" y="3939.0" />
+      <point x="2526.5714285714284" y="3939.0" />
+      <point x="356.57142857142844" y="303.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.network.PacketCommand.Command" target="co.amscraft.ultralib.network.PacketCommand">
+      <point x="0.0" y="-66.0" />
+      <point x="0.0" y="244.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.ObjectEditor.NewObject" target="co.amscraft.ultralib.editor.editors.NewObjectEditor.NewObject">
+      <point x="-120.75" y="-126.0" />
+      <point x="6599.0" y="4009.0" />
+      <point x="6407.5" y="4009.0" />
+      <point x="135.5" y="185.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.commands.UltraCommand" target="co.amscraft.ultralib.commands.Component">
+      <point x="0.0" y="-303.0" />
+      <point x="0.0" y="332.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.Editor" target="co.amscraft.ultralib.player.PlayerData">
+      <point x="0.0" y="-627.5" />
+      <point x="3865.5" y="573.0" />
+      <point x="3241.8333333333335" y="573.0" />
+      <point x="170.33333333333348" y="274.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.ObjectEditor" target="co.amscraft.ultralib.editor.editors.AbstractEditor">
+      <point x="0.0" y="-243.5" />
+      <point x="7032.0" y="2988.0" />
+      <point x="6169.5" y="2988.0" />
+      <point x="277.5" y="184.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.events.EntityDeathByEntityEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-215.0" />
+      <point x="852.5" y="5856.0" />
+      <point x="3430.8333333333335" y="5856.0" />
+      <point x="-138.66666666666652" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.network.NetworkCommand" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-155.0" />
+      <point x="3689.5" y="3949.0" />
+      <point x="2407.7142857142853" y="3949.0" />
+      <point x="237.71428571428578" y="303.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.editor.editors.ObjectEditor.NewObject" target="co.amscraft.ultralib.editor.editors.ObjectEditor">
+      <point x="120.75" y="-126.0" />
+      <point x="6840.5" y="4009.0" />
+      <point x="7032.0" y="4009.0" />
+      <point x="0.0" y="243.5" />
+    </edge>
+    <edge source="co.amscraft.ultralib.events.ServerTickEvent" target="co.amscraft.ultralib.events.utility.UltraEvent">
+      <point x="0.0" y="-126.0" />
+      <point x="5862.5" y="5856.0" />
+      <point x="3708.1666666666665" y="5856.0" />
+      <point x="138.66666666666652" y="66.0" />
+    </edge>
+    <edge source="co.amscraft.ultralib.modules.ModulesCommand" target="co.amscraft.ultralib.commands.UltraCommand">
+      <point x="0.0" y="-125.5" />
+      <point x="1487.9999999999998" y="3959.0" />
+      <point x="2051.142857142857" y="3959.0" />
+      <point x="-118.85714285714312" y="303.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="1357.5714285714282" y="5324.142857142856" />
+  <SelectedNodes>
+    <node>co.amscraft.ultralib.UltraLib</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

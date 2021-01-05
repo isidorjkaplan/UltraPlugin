@@ -15,19 +15,24 @@ This project has over 300 classes and so it will be very difficult to navigate t
 ├── core: The core library that all the modules use
 └── modules: All of the completed / maintained modules that I wrote using this library. 
 ```
-
-
+### Core Module 
+Below is the tree structure for the Core module. I annoted some of the classes to explain what they do
 ```
 .
-├── UltraLib.java
-├── UltraListener.java
-├── UltraObject.java
-├── commands
+├── UltraLib.java ---------------------- This is the top-level module. Control is passed to me here.
+├── UltraListener.java ----------------- A set of listeners for certain actions from players
+├── UltraObject.java ------------------- Base level object containing core library functionality. \
+                            Objects that extend from here support a range of functionality from auto-saving to clean editing in game.
+├── commands --------------------------- One of the useful features of my library is that it contains a command parser \  
+                                    users in the game can execute commands to interact with my plugin. \    
+                                    library handles permissions of who can execute what commands to interface with data
 │   ├── BaseUltraCommand.java
 │   ├── Component.java
 │   ├── UltraBukkitCommand.java
 │   └── UltraCommand.java
-├── editor
+├── editor ----------------------------- Weather it be designing "spells" in game or creating "quests," \
+                                the library supports allowing users in-game to interface directly, \
+                                including creating, deleteting, and modifying any objects that extend from UltraObject
 │   ├── DisplayValue.java
 │   ├── Editor.java
 │   ├── EditorCheck.java
@@ -43,7 +48,8 @@ This project has over 300 classes and so it will be very difficult to navigate t
 │       ├── MapEditor.java
 │       ├── NewObjectEditor.java
 │       └── ObjectEditor.java
-├── events
+├── events ------------------------------ I decided it would be useful to have my own event manager \
+                                                to interface cleaner with my other classes
 │   ├── EditorRunResponseEvent.java
 │   ├── EntityDeathByEntityEvent.java
 │   ├── PlayerDataCreationEvent.java
@@ -52,11 +58,16 @@ This project has over 300 classes and so it will be very difficult to navigate t
 │   └── utility
 │       ├── CancelableEvent.java
 │       └── UltraEvent.java
-├── modules
+├── modules ----------------------------- This handles the module loading. It will dynamically load \
+                                    the other modules from their jar files. It will also automatically \
+                                    register their listeners, data types, commands, etc, etc
 │   ├── Module.java
 │   ├── ModuleCommand.java
 │   └── ModulesCommand.java
-├── network
+├── network ----------------------------- For a while I had a network of multiple servers and wanted \
+                                    a clean way to interface between them, including things such as \
+                                    sending chat messages from one to the other, and even sending \
+                                    complicated objects such as Spells or Quests (UltraObject derivitves) 
 │   ├── FilePacket.java
 │   ├── NetworkCommand.java
 │   ├── NetworkConnection.java
@@ -71,7 +82,10 @@ This project has over 300 classes and so it will be very difficult to navigate t
 │   │   └── PacketCommandEvent.java
 │   └── exceptions
 │       └── PacketTimedOutException.java
-├── player
+├── player --------------------------------- Stores the core player data. Any of my other modules can register \
+                                        data that they want UltraCore to keep track of by simply creating a datatype \
+                                        that extends from "PlayerData." UltraCore will handle saving and loading that data \
+                                        including with complicated data-types involving graphs and refernces to classes
 │   ├── PlayerData.java
 │   ├── PlayerReference.java
 │   ├── PlayerUtility.java
@@ -79,7 +93,8 @@ This project has over 300 classes and so it will be very difficult to navigate t
 ├── tic
 │   ├── GameTic.java
 │   └── ServerTic.java
-└── utils
+└── utils ----------------------------------- This folder contains a bunch of misc functions and features that I \
+                                            found I was having to use often in multiple modules
     ├── BinaryHexConverter.java
     ├── NMSUtils.java
     ├── ObjectSerializer.java

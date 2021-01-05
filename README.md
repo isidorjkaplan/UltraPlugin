@@ -9,8 +9,8 @@ To be clear for anyone not familiar with minecraft (anyone interested in hiring 
 ### Size of project
 As a reference to how large a project this was, I spent over a year's worth of time developing it. Carefully designing a resilient object-oriented structure that supported building it up peice-by-peice until it became the beheamouth you see here. 
 
-Written solely by me:
-Lines of Code: 27561
+Written solely by me: \
+Lines of Code: 27561 \
 Classes: 310
 
 ## Project Structure

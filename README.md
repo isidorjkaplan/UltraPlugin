@@ -113,3 +113,221 @@ Below is the tree structure for the Core module. I annoted some of the classes t
         ├── ParsableSerializer.java
         └── UltraObjectSerializer.java
 ```
+
+## Other Mentionable Modules
+
+### Magic
+This was a plugin that added wands, magic, and spells to the game. The spell's were UltraObject's and could be fully configured in game using the default editor from UltraCore which made them more customizable then any other magic plugin that existed at the time that I created this. 
+```
+UltraMagic
+├── Actions
+│   ├── Actions-Izzy�\200\231s\ MacBook\ Air.iml
+│   ├── Actions.iml
+│   └── src
+│       └── co
+│           └── amscraft
+│               └── ultramagic
+│                   └── main
+│                       ├── actions
+│                       │   ├── AreaOfEffect.java
+│                       │   ├── Burn.java
+│                       │   ├── CastAction.java
+│                       │   ├── ChangeBlock.java
+│                       │   ├── ChangeGamemode.java
+│                       │   ├── ChangeHealth.java
+│                       │   ├── Command.java
+│                       │   ├── Conditional.java
+│                       │   ├── CopyAndPaste.java
+│                       │   ├── CustomProjectileAction.java
+│                       │   ├── Damage.java
+│                       │   ├── DamageImmunity.java
+│                       │   ├── Delay.java
+│                       │   ├── DisableCasting.java
+│                       │   ├── EndSpell.java
+│                       │   ├── Explosion.java
+│                       │   ├── GiveItem.java
+│                       │   ├── Glow.java
+│                       │   ├── Heal.java
+│                       │   ├── Lightning.java
+│                       │   ├── Line.java
+│                       │   ├── LookingAt.java
+│                       │   ├── Mount.java
+│                       │   ├── PotionAction.java
+│                       │   ├── ProjectileAction.java
+│                       │   ├── Random.java
+│                       │   ├── Repeat.java
+│                       │   ├── SummonMob.java
+│                       │   ├── SummonNPC.java
+│                       │   ├── TargetOffset.java
+│                       │   ├── TeleportAction.java
+│                       │   ├── Velocity.java
+│                       │   ├── VolumeAction.java
+│                       │   └── Wave.java
+│                       └── effects
+│                           ├── CircleEffect.java
+│                           ├── CloudEffect.java
+│                           ├── PillarEffect.java
+│                           ├── SoundEffect.java
+│                           ├── SphereEffect.java
+│                           └── SpiralEffect.java
+├── UltraMagic-Izzy�\200\231s\ MacBook\ Air.iml
+├── UltraMagic.iml
+├── spells.yml
+└── src
+    └── co
+        └── amscraft
+            └── ultramagic
+                ├── MagicCommand.java
+                ├── MagicData.java
+                ├── MagicListener.java
+                ├── Spell.java
+                ├── SpellInstance.java
+                ├── SpellThread.java
+                ├── Target.java
+                ├── UltraMagic.java
+                ├── actions
+                │   ├── AbstractProjectileAction.java
+                │   ├── Action.java
+                │   ├── ParentAction.java
+                │   └── TargetSelectorAction.java
+                ├── effects
+                │   ├── EffectAction.java
+                │   └── ParticleEffect.java
+                ├── events
+                │   ├── GetBoundSpellsEvent.java
+                │   ├── GetPlayerManaEvent.java
+                │   ├── GetPlayerManaRegenEvent.java
+                │   ├── PlayerSpellCheckEvent.java
+                │   ├── SpellActionEvent.java
+                │   ├── SpellCastEvent.java
+                │   └── SpellFinishCastingEvent.java
+                ├── exceptions
+                │   └── InvalidTargetException.java
+                └── wands
+                    ├── Wand.java
+                    ├── WandInterfaceOld.java
+                    └── WandObject.java
+```
+
+### Quests
+This added RPG style quests to the game. You could talk to NPC's and complete objectives and get rewards. Like all modules the quests were fully customizable using the UltraCore editor without any further programming required. 
+```
+Quests
+├── Quests.iml
+└── src
+    └── co
+        └── amscraft
+            └── quests
+                ├── Objective.java
+                ├── Quest.java
+                ├── QuestLocation.java
+                ├── QuestsCommand.java
+                ├── QuestsConverter.java
+                ├── QuestsListener.java
+                ├── QuestsModule.java
+                ├── Requirement.java
+                ├── Reward.java
+                ├── Stage.java
+                ├── objectives
+                │   ├── Delay.java
+                │   ├── DeliverItem.java
+                │   ├── Fishing.java
+                │   ├── KillMobs.java
+                │   ├── KillNPC.java
+                │   ├── KillPlayer.java
+                │   ├── ReachLocation.java
+                │   └── TalkNPC.java
+                ├── player
+                │   ├── ObjectiveInstance.java
+                │   ├── QuestInstance.java
+                │   └── QuestsData.java
+                ├── requirements
+                │   ├── AllRequirements.java
+                │   ├── AnyRequirements.java
+                │   ├── Cooldown.java
+                │   ├── Invert.java
+                │   ├── ParentRequirement.java
+                │   ├── PermissionRequirement.java
+                │   └── QuestRequirement.java
+                └── rewards
+                    ├── CommandReward.java
+                    └── ItemReward.java
+```
+
+### Profiles
+This plugin allowed users to have multiple profiles. They could use a command to fully swap their data, including all their plugin data including from other essential plugins that I did not make as well as all of the data they have with Ultra. 
+```
+Profiles
+├── Profiles.iml
+└── src
+    └── co
+        └── amscraft
+            └── profiles
+                ├── Profile.java
+                ├── ProfileCommand.java
+                ├── ProfileData.java
+                ├── ProfileModule.java
+                ├── ProfileType.java
+                └── profiletypes
+                    ├── BukkitData.java
+                    ├── EssentialsData.java
+                    ├── PermissionsData.java
+                    ├── QuestsData.java
+                    ├── SkinData.java
+                    └── UltraData.java
+```
+
+### Discord Chat 
+This was an interface that extended on the Chat module below, it allowed users on Discord to chat on the server as if they were physically logged in. It synced a discord channel with a chat channel on Minecraft. 
+```
+DiscordChat
+├── DiscordChat.iml
+├── modules
+│   └── DiscordChat.iml
+└── src
+    └── co
+        └── amscraft
+            └── discordchat
+                ├── DiscordChat.java
+                ├── LinkCommand.java
+                ├── ModuleListener.java
+                ├── chat
+                │   └── ChannelBridge.java
+                └── discord
+                    ├── BotConfig.java
+                    ├── DiscordUsers.java
+                    └── UltraBot.java
+```
+
+### RPGItems
+This plugin added special items, they could have spells (from UltraMagic) bound to them as well as other perks such as limited uses and cool icons and all that. 
+```
+RPGItems
+├── RPGItems.iml
+└── src
+    └── co
+        └── amscraft
+            └── rpgitems
+                ├── RPGItem.java
+                ├── RPGItemCommand.java
+                ├── RPGItemPower.java
+                ├── RPGItems.java
+                ├── RPGListener.java
+                └── SerializedRPGItem.java
+```
+
+### Chat Manager
+A simple chat manager. By default minecraft has only 1 channel. This added multiple chat channels so that when there were a lot of users on the server they did not all chat in the same channel. 
+```
+UltraChat
+├── UltraChat.iml
+└── src
+    └── co
+        └── amscraft
+            └── ultrachat
+                ├── Channel.java
+                ├── ChannelCommand.java
+                ├── ChatData.java
+                ├── UltraChat.java
+                └── UltraListener.java
+```

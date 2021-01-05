@@ -2,8 +2,16 @@
 ## About this project
  While I was in Grade 11 and 12 I single-handidly created this codebase. It consists of a core library, reffered to as "UltraLib," which stores a set of useful libraries and types. I then used this library to create a large amount of independant modular plugins that share functionality through the core plugin. These can be found in the 'modules' and 'abandoned' folders. 
 
-## What is a plugin?
+
+### What is a plugin?
 To be clear for anyone not familiar with minecraft (anyone interested in hiring me for a job hopefully) a "plugin" is code that a "minecraft server" runs. In general when people play minecraft they join a set of independantly run worlds which are typically refferred to as a "server." As it so happens, a minecraft server is hosted on an actual server and when it is running people who run servers can inject code to modify the gameplay, that code is referred to as a plugin. 
+
+### Size of project
+As a reference to how large a project this was, I spent over a year's worth of time developing it. Carefully designing a resilient object-oriented structure that supported building it up peice-by-peice until it became the beheamouth you see here. 
+
+Written solely by me:
+Lines of Code: 27561
+Classes: 310
 
 ## Project Structure
 This project has over 300 classes and so it will be very difficult to navigate this repo without explaining the structure. 

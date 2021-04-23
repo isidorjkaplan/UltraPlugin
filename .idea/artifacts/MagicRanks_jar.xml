@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MagicRanks:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MagicRanks_jar</output-path>
+    <root id="archive" name="MagicRanks.jar">
+      <element id="module-output" name="MagicRanks" />
+    </root>
+  </artifact>
+</component>

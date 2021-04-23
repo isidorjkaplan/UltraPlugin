@@ -169,7 +169,7 @@ public class Spell extends UltraObject {
 
     @Override
     public void delete() {
-        File file = new File("plugins/Magic/spells.yml");
+        /*File file = new File("plugins/Magic/spells.yml");
         if (file.exists()) {
             FileConfiguration config = YamlConfiguration.loadConfiguration(file);
             config.set("U-" + this.getName(), null);
@@ -179,7 +179,7 @@ public class Spell extends UltraObject {
                 e.printStackTrace();
             }
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "magic:magic load");
-        }
+        }*/
         super.delete();
 
     }

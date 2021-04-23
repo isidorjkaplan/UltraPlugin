@@ -7,11 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="DiscordAPI" level="project" />
-    <orderEntry type="library" name="UltraLib" level="project" />
+    <orderEntry type="module" module-name="core" />
     <orderEntry type="module" module-name="DiscordChat" />
-    <orderEntry type="module" module-name="UltraLib" />
-    <orderEntry type="module" module-name="DiscordChat" />
-    <orderEntry type="module" module-name="UltraLib" />
+    <orderEntry type="library" name="dependancies" level="project" />
   </component>
 </module>

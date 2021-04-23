@@ -7,8 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="core" />
     <orderEntry type="library" name="dependancies" level="project" />
-    <orderEntry type="module" module-name="UltraLib" />
-    <orderEntry type="module" module-name="UltraLib" />
   </component>
 </module>

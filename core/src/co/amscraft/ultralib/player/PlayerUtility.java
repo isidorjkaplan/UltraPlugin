@@ -5,9 +5,7 @@ import co.amscraft.ultralib.tic.ServerTic;
 import io.puharesource.mc.titlemanager.TitleManagerPlugin;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import ru.tehkode.permissions.PermissionGroup;
-import ru.tehkode.permissions.PermissionUser;
-import ru.tehkode.permissions.bukkit.PermissionsEx;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,10 +75,11 @@ public class PlayerUtility extends PlayerData {
 
 
     public List<String> getAllPermissions() {
+
         Player player = this.getPlayer().getBukkit();
-        PermissionUser user = PermissionsEx.getUser(player);
+        ru.tehkode.permissions.PermissionUser user = ru.tehkode.permissions.bukkit.PermissionsEx.getUser(player);
         List<String> list = new ArrayList<>(user.getPermissions(player.getWorld().getName()));
-        for (PermissionGroup group: user.getRankLadders().values()) {
+        for (ru.tehkode.permissions.PermissionGroup group: user.getRankLadders().values()) {
             list.addAll(group.getPermissions(player.getWorld().getName()));
         }
         for (int i = 0; i < list.size(); i++) {

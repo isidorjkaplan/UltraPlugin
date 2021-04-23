@@ -32,6 +32,18 @@ public class UltraMagic extends Module {
             editingSpellAliases = true;
             File file = new File("plugins/Magic/spells.yml");
             if (file.exists()) {
+                List<Spell> toDelete = new ArrayList<>();
+                for (Spell spell : Spell.getSpells()) {
+                    if (spell.getAllActions().isEmpty()) {
+                        toDelete.add(spell);
+                        //System.out.println("WARNING: Deleting empty spell: " + spell.getName());
+                    }
+                }
+                for (Spell spell : toDelete) {
+                    spell.delete();
+                    System.out.println("WARNING: Deleting empty spell: " + spell.getName());
+                }
+
                 FileConfiguration config = YamlConfiguration.loadConfiguration(file);
                 for (String name : config.getKeys(false)) {
                     if (name.startsWith("U-") && config.get(name + ".catagory") != null && config.getString(name + ".catagory").equals("Umagic")) {
@@ -53,7 +65,6 @@ public class UltraMagic extends Module {
                     config.set(name + ".parameters.console", true);
                     config.set(name + ".parameters.target", "self");
                     config.set(name + ".costs.mana", spell.mana);
-
                 }
                 try {
                     config.save(file);
@@ -62,7 +73,6 @@ public class UltraMagic extends Module {
                 }
                 if (!isElmakersEnabled()) {
                     //  com.elmakers.mine.bukkit.action.builtin.CommandAction
-
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "magic:magic load");
                 } else {
                     com.elmakers.mine.bukkit.magic.MagicPlugin.getAPI().reload();

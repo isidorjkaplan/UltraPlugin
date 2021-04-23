@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UltraMagic:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UltraMagic_jar</output-path>
+    <root id="archive" name="UltraMagic.jar">
+      <element id="module-output" name="UltraMagic" />
+    </root>
+  </artifact>
+</component>

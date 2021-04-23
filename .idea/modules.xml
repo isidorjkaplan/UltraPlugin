@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/modules/UltraMagic/Actions/Actions.iml" filepath="$PROJECT_DIR$/modules/UltraMagic/Actions/Actions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/AntiBot/AntiBot.iml" filepath="$PROJECT_DIR$/modules/AntiBot/AntiBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/CustomFTPServer/CustomFTPServer.iml" filepath="$PROJECT_DIR$/modules/CustomFTPServer/CustomFTPServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/DiceRoll/DiceRoll.iml" filepath="$PROJECT_DIR$/modules/DiceRoll/DiceRoll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/DiscordChat/DiscordChat.iml" filepath="$PROJECT_DIR$/modules/DiscordChat/DiscordChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/ErrorFilter/ErrorFilter.iml" filepath="$PROJECT_DIR$/modules/ErrorFilter/ErrorFilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/MagicRanks/MagicRanks.iml" filepath="$PROJECT_DIR$/modules/MagicRanks/MagicRanks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/Networking/Networking.iml" filepath="$PROJECT_DIR$/modules/Networking/Networking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/Ontime/Ontime.iml" filepath="$PROJECT_DIR$/modules/Ontime/Ontime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/PexTracker/PexTracker.iml" filepath="$PROJECT_DIR$/modules/PexTracker/PexTracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/Profiles/Profiles.iml" filepath="$PROJECT_DIR$/modules/Profiles/Profiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/PvPManager/PvPManager.iml" filepath="$PROJECT_DIR$/modules/PvPManager/PvPManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/Quests/Quests.iml" filepath="$PROJECT_DIR$/modules/Quests/Quests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/RPGItems/RPGItems.iml" filepath="$PROJECT_DIR$/modules/RPGItems/RPGItems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/ResourcePack/ResourcePack.iml" filepath="$PROJECT_DIR$/modules/ResourcePack/ResourcePack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/Spawn/Spawn.iml" filepath="$PROJECT_DIR$/modules/Spawn/Spawn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/SpellRegions/SpellRegions.iml" filepath="$PROJECT_DIR$/modules/SpellRegions/SpellRegions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/UltraChat/UltraChat.iml" filepath="$PROJECT_DIR$/modules/UltraChat/UltraChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/UltraMagic/UltraMagic.iml" filepath="$PROJECT_DIR$/modules/UltraMagic/UltraMagic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UltraPlugin.iml" filepath="$PROJECT_DIR$/.idea/UltraPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/Warps/Warps.iml" filepath="$PROJECT_DIR$/modules/Warps/Warps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+    </modules>
+  </component>
+</project>

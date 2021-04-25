@@ -15,6 +15,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -266,6 +267,7 @@ public class MagicListener implements Listener {
     @EventHandler
     public void onPlayerOpenWandEvent(PlayerDropItemEvent evt) {
         if (WandObject.isWand(evt.getItemDrop().getItemStack())) {
+            UltraPlayer.getPlayer(evt.getPlayer()).getData(MagicData.class).setLastDropEvent(System.currentTimeMillis());
             evt.setCancelled(true);
             //evt.getPlayer().getInventory().setItemInMainHand(evt.getItemDrop().getItemStack());
             new BukkitRunnable() {
@@ -326,10 +328,12 @@ public class MagicListener implements Listener {
         }
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.LOW)
     public void playerCastListener(PlayerInteractEvent evt) {
         Spell spell = null;
         MagicData data = UltraPlayer.getPlayer(evt.getPlayer()).getData(MagicData.class);
+        if (System.currentTimeMillis() - data.getLastDropEvent() < 50) return;//Cannot cast spell, it was actually a drop event
+        //evt.getAction() == Action.
         if (evt.getAction() == Action.LEFT_CLICK_AIR || evt.getAction() == Action.LEFT_CLICK_BLOCK) {
             spell = data.getActiveSpell();
 

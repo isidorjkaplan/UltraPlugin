@@ -38,6 +38,8 @@ public class MagicData extends PlayerData {
     private BossBar bar = null;
     @FieldDescription(show = false, save = false)
     private long lastUpdate = System.currentTimeMillis();
+    @FieldDescription(show = false, save = false)
+    private long lastDropEvent = System.currentTimeMillis();
 
     @ServerTic(isAsync = true, delay = 1)
     public static void updatePlayerSidebars() {
@@ -177,6 +179,14 @@ public class MagicData extends PlayerData {
 
     public Spell[] getBoundRaw() {
         return this.bound;
+    }
+
+    public long getLastDropEvent() {
+        return lastDropEvent;
+    }
+
+    public void setLastDropEvent(long lastDropEvent) {
+        this.lastDropEvent = lastDropEvent;
     }
 
     public void updateSidebar() {

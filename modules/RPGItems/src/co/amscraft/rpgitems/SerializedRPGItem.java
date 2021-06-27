@@ -6,7 +6,10 @@ import co.amscraft.ultralib.utils.ObjectUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
+import org.bukkit.attribute.Attribute;
+import org.bukkit.attribute.AttributeModifier;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -108,8 +111,8 @@ public class SerializedRPGItem {
         }
         RPGItem item = getItem();
         ItemStack stack = item.getItemStack();
+        ItemMeta meta = stack.getItemMeta();
         if (this.durability != -1) {
-            ItemMeta meta = stack.getItemMeta();
             List<String> lore = meta.getLore();
             lore.add(0, ChatColor.translateAlternateColorCodes('&',"&7Durability&f: &7" + durability + "&8/&7" + item.getDurability()));
             lore.add(0, "");
@@ -119,9 +122,16 @@ public class SerializedRPGItem {
                 lore.add("§7Soulbound to §8" + name);
             }
             meta.setLore(lore);
-            stack.setItemMeta(meta);
+
         }
         stack.setAmount(this.getAmount());
+
+        if (item.getDamage() != -1) {
+            AttributeModifier modifier = new AttributeModifier(UUID.randomUUID(), "generic.attackDamage", item.getDamage(), AttributeModifier.Operation.ADD_NUMBER);
+            meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, modifier);
+        }
+        stack.setItemMeta(meta);
+
         try {
             stack = NMSUtils.write(stack, "rpgitem", ObjectUtils.write(this));
         } catch (IllegalAccessException e) {

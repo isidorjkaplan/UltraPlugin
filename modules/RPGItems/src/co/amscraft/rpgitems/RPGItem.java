@@ -26,10 +26,8 @@ public class RPGItem extends UltraObject {
     private short itemData = 0;
     @FieldDescription(help = "The Material Type of the Item")
     private Material item = Material.DIAMOND_SWORD;
-    @FieldDescription(help = "The min damage in the range", unit = "half-hearts")
-    private int damageMin = 3;
-    @FieldDescription(help = "The max damage of the items", unit = "half-hearts")
-    private int damageMax = 7;
+    @FieldDescription(help = "The damage of the sword", unit = "half-hearts")
+    private int damage = -1;
     @FieldDescription(help = "The durability of the item", unit = "uses")
     private int durability = -1;
     @FieldDescription(help = "If true, the item will be undroppable")
@@ -40,16 +38,19 @@ public class RPGItem extends UltraObject {
     private Map<String, Integer> enchantments = new HashMap<>();
     private Set<RPGItemPower> powers = new HashSet<>();
 
+
+    @FieldDescription(help = "DEPRECATED: DO NOT USE")
+    private int damageMin = -1;
+    @FieldDescription(help = "DEPRECATED: DO NOT USE")
+    private int damageMax = -1;
+
     public ItemStack getItemStack() {
         ItemStack stack = new ItemStack(item, 1);
         ItemMeta meta = stack.getItemMeta();
         meta.setDisplayName(ChatColor.translateAlternateColorCodes('&',display));
         List<String> loreList = convertLore(ChatColor.translateAlternateColorCodes('&',lore));
-        if (damageMin > 0) {
-            loreList.add(0, org.bukkit.ChatColor.translateAlternateColorCodes('&', "&7Damage&f: &7" + damageMin + "&8-&7" + damageMax));
-            if (damageMin == damageMax) {
-                loreList.set(0, org.bukkit.ChatColor.translateAlternateColorCodes('&', "&7Damage&f: &7" + damageMin));
-            }
+        if (damage > 0) {
+            loreList.add(0, org.bukkit.ChatColor.translateAlternateColorCodes('&', "&7Damage&f: &7" + damage));
         }
         meta.setUnbreakable(true);
         meta.setLore(loreList);
@@ -143,8 +144,12 @@ public class RPGItem extends UltraObject {
         return name;
     }
 
-    public double getRandomDamage() {
-        return Math.random()*(damageMax-damageMin) + damageMin;
+    public double getDamage() {
+        //For legacy support if they have not specified a damage and have a range then use the mean of that range
+        if (damage == -1 && damageMin != -1)
+            setDamage((damageMin + damageMax)/2);
+        //return damage
+        return damage;
     }
 
     public String getDisplay() {
@@ -179,21 +184,11 @@ public class RPGItem extends UltraObject {
         this.item = item;
     }
 
-    public int getDamageMin() {
-        return damageMin;
+    public void setDamage(int damage) {
+        this.damageMin = this.damageMax = -1;
+        this.damage = damage;
     }
 
-    public void setDamageMin(int damageMin) {
-        this.damageMin = damageMin;
-    }
-
-    public int getDamageMax() {
-        return damageMax;
-    }
-
-    public void setDamageMax(int damageMax) {
-        this.damageMax = damageMax;
-    }
 
     public int getDurability() {
         return durability;

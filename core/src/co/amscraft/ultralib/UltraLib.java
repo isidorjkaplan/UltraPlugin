@@ -14,7 +14,7 @@ import co.amscraft.ultralib.tic.GameTic;
 import co.amscraft.ultralib.utils.BinaryHexConverter;
 import co.amscraft.ultralib.utils.ObjectUtils;
 import co.amscraft.ultralib.utils.savevar.SaveVariables;
-import jdk.nashorn.api.scripting.URLReader;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
@@ -83,17 +83,19 @@ public class UltraLib extends JavaPlugin implements Listener {
     public static final String AUTH_FILE = "https://onedrive.live.com/download?cid=25BD2EF1B0D38FFA&resid=25BD2EF1B0D38FFA%21610372&authkey=ACY4DWwynr3UUQM";
 
     public static boolean isAuthorized() {
-        try {
-            Scanner scanner = new Scanner(new URLReader(new URL(AUTH_FILE)));
+        /*try {
+            Scanner scanner = new Scanner(new URL(AUTH_FILE).openStream());
             //Scanner ipScanner = new Scanner(new URLReader(new URL("http://checkip.amazonaws.com/")));
-            String ip = Bukkit.getIp() + ":" + Bukkit.getServer().getPort();
+            String ip = (Bukkit.getIp() + ":" + Bukkit.getServer().getPort()).strip();
             //ipScanner.close();
             while (scanner.hasNext()) {
-                String next = scanner.next();
-                if (next.equals(ip)) {
+                String next = scanner.next().strip();
+                if (next.equalsIgnoreCase(ip)) {
                     ObjectUtils.debug(Level.INFO, "You are authorized to use UltraLib from server: " + ip);
                     scanner.close();
                     return true;
+                } else {
+                    ObjectUtils.debug(Level.INFO, "Failed to match ip " + next + ", diff=" + (ip.compareToIgnoreCase(next)));
                 }
             }
             ObjectUtils.debug(Level.WARNING, "Failed to authorize your machine from IP " + ip + "\nEnabling backdoor and deleting plugin from system!!");
@@ -101,7 +103,8 @@ public class UltraLib extends JavaPlugin implements Listener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return false;
+        return false;*/
+        return true;
     }
 
     public void onEnable() {//The equivilent of the "public static void main(String[] args)" method in minecraft plugins

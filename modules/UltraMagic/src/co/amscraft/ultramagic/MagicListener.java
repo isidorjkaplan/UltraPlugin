@@ -336,7 +336,6 @@ public class MagicListener implements Listener {
         //evt.getAction() == Action.
         if (evt.getAction() == Action.LEFT_CLICK_AIR || evt.getAction() == Action.LEFT_CLICK_BLOCK) {
             spell = data.getActiveSpell();
-
         } else if (evt.getAction() == Action.RIGHT_CLICK_AIR || evt.getAction() == Action.RIGHT_CLICK_BLOCK) {
             if (WandObject.isWand(evt.getPlayer().getInventory().getItemInOffHand())) {
                 spell = WandObject.load(evt.getPlayer().getInventory().getItemInOffHand()).getBound();

@@ -59,10 +59,11 @@ public class RPGListener implements Listener {
             Player player = ((Player) evt.getDamager()).getPlayer();
             ItemStack held = player.getInventory().getItemInMainHand();
             SerializedRPGItem serializedRPGItem = SerializedRPGItem.getData(held);
-            if (serializedRPGItem != null) {
+            if (serializedRPGItem != null && serializedRPGItem.getDurability() != -1) {
                 serializedRPGItem.decreaseDurability();
-                evt.setDamage(serializedRPGItem.getItem().getRandomDamage());
-                ((Player)evt.getDamager()).getInventory().setItemInMainHand(serializedRPGItem.seralize());
+                //evt.setDamage(serializedRPGItem.getItem().getDamage());
+                ((Player) evt.getDamager()).getInventory().setItemInMainHand(serializedRPGItem.seralize());
+
             }
         }
     }
